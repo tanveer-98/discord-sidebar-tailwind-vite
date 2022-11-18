@@ -1,0 +1,32 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .sidebar-icon{
+        @apply relative flex  rounded-3xl transition-all duration-300
+         ease-linear first-letter:text-green-500  items-center 
+         justify-center h-12 w-12 my-2 mx-auto shadow-lg bg-gray-800;
+    }
+    .sidebar-icon:hover{
+       @apply bg-green-300 rounded-xl
+    }
+
+    .sidebar-tooltip{
+    @apply  absolute py-2 px-5 w-auto left-20 bg-gray-900 shadow-md rounded-md 
+        text-white text-xs font-bold transition-all duration-200  min-w-max scale-0
+    }
+
+
+    .sidebar-arrow{
+    @apply  transition-all duration-200 scale-0 absolute left-[37px] bottom-[32px] -rotate-90  w-16 overflow-hidden inline-block
+    }
+    
+    .sidebar-arrow .sidebar-inner{
+    @apply h-5 w-5 bg-gray-900 rotate-45 transform origin-bottom-left
+    }
+
+
+}
